@@ -286,7 +286,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 481px) and (max-width: 767px){
+@media screen and (max-width: 393px){
         header {
         padding: 10px;
         flex-direction: column;
