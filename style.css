@@ -16,7 +16,7 @@
 }
 
 .light {
-    --bg-color: #f5f5f5;
+    --bg-color: #f1f1f1;
     --text-color: #000000de;
     --card-bg: #d3d2d2;
     --tag-hab: rgb(157, 177, 233);
@@ -46,7 +46,7 @@ header {
 .nav a {
     text-decoration: none;
     margin: 10px;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--text-color);
     font-weight: bolder;
 
@@ -77,11 +77,12 @@ header {
 
 
 #tempo {
-    padding: 10px;
+    padding: 20px;
     cursor: pointer;
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 25px;
+    
 }
 
 .sobre-mim {
@@ -98,6 +99,7 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     max-width: 700px;
+    
 }
 
 .grade-projetos {
@@ -115,6 +117,7 @@ header {
     grid-template-columns: 1fr 1fr;  
     max-width: 300px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    
 
 }
 
@@ -284,18 +287,28 @@ footer {
     padding: 20px;
     background-color: var(--card-bg);
     text-align: center;
+    
+    p {
+        margin-top: 10px;
+    }
 }
 
-@media screen and (max-width: 393px){
+@media screen and (max-width: 600px){
         header {
         padding: 10px;
         flex-direction: column;
         align-items: flex-start;
         align-items: center;
+    
         
         h1{
             font-size: 20px;
             
+        }
+
+        #tempo {
+            padding: 5px;
+            font-size: 18px;
         }
     } 
 
