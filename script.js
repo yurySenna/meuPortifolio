@@ -33,4 +33,10 @@ async function carregarDadosClima() {
     }
   }
 
-  carregarDadosClima();
+  const botao = document.querySelector('.botao-menu')
+  const menu = document.querySelector('.nav')
+
+  botao.addEventListener('click', () => {
+    menu.classList.toggle('ativo')
+   
+  });

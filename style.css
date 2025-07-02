@@ -12,7 +12,7 @@
     --card-bg: #1e1e1e;
     --tag-hab: rgba(77, 124, 254, 0.2);
     --card-pro: #161616;
-    
+
 }
 
 .light {
@@ -33,22 +33,29 @@ header {
     background-color: var(--card-bg);
     display: flex;
     justify-content: space-evenly;
-    align-items: center;  
+    align-items: center;
     width: 100vw;
-    height: 100px;
-    padding: 20px;
+    height: 90px;
+    padding: 10px;
     position: fixed;
     top: 0;
     z-index: 1;
-    
-} 
+
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+
+}
 
 .nav a {
     text-decoration: none;
-    margin: 10px;
     font-size: 20px;
     color: var(--text-color);
     font-weight: bolder;
+    
+
 
 }
 
@@ -67,8 +74,8 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: linear-gradient(90deg,#4f46e5,#7c3aed);
-    transition:  width 0.5s ease;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
+    transition: width 0.5s ease;
 }
 
 .menu-link:hover::after {
@@ -77,19 +84,26 @@ header {
 
 
 #tempo {
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
     border: none;
     background: none;
-    font-size: 25px;
-    
+    font-size: 20px;
+
+}
+
+.botao-menu {
+    border: none;
+    background: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 .sobre-mim {
     padding: 80px 0;
     margin-top: 150px;
-   
-
 }
 
 .card {
@@ -99,25 +113,25 @@ header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     margin: 20px auto;
     max-width: 700px;
-    
+
 }
 
 .grade-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 40px;
-    text-align: center;  
-    
+    text-align: center;
+
 }
 
 .card-projeto {
     background-color: var(--card-pro);
     border-radius: 10px;
     overflow: hidden;
-    grid-template-columns: 1fr 1fr;  
+    grid-template-columns: 1fr 1fr;
     max-width: 300px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    
+
 
 }
 
@@ -128,7 +142,7 @@ header {
     margin-bottom: 10px;
     border-radius: 5px;
     margin-top: 20px;
-    transition: transform 0.3s ease, filter 0.3s ease; 
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 
@@ -159,11 +173,12 @@ header {
     object-fit: cover;
     border-radius: 5px;
     margin-top: 20px;
-    transition: transform 0.3s ease, filter 0.3s ease;  
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.img-cursos:hover, .img-projeto:hover {
-    transform: scale(1.2); 
+.img-cursos:hover,
+.img-projeto:hover {
+    transform: scale(1.2);
     filter: brightness(1.1);
     cursor: pointer;
 }
@@ -172,7 +187,7 @@ header {
     padding: 60px 0;
     /* margin: 20px auto; */
     padding: 10px;
-    
+
 
 }
 
@@ -199,18 +214,19 @@ header {
     gap: 50px;
     align-items: center;
     max-width: 900px;
-    
+
 }
 
 .img-sobre {
     height: 400px;
     background-color: #161616;
     border-radius: 10px;
-}    
+}
 
 .conteudo-sobre h2 {
     margin-bottom: 10px;
 }
+
 .conteudo-sobre p {
     margin-bottom: 10px;
     color: var(--text-color);
@@ -234,10 +250,11 @@ header {
 
 }
 
-.efeito-cursor  {
+.efeito-cursor {
     cursor: pointer;
     transition: transform 0.4s ease-in-out;
 }
+
 .efeito-cursor:hover {
     transform: translateY(-8px);
 }
@@ -251,7 +268,7 @@ header {
     max-width: 800px;
     margin: 0 auto;
 
-}    
+}
 
 .botao-contato {
     display: flex;
@@ -270,14 +287,17 @@ header {
     background-color: #25D366;
 
 }
+
 .email {
     background-color: #EA4335;
 
 }
+
 .linkedin {
     background-color: #0077B5;
 
 }
+
 .git {
     background-color: #333;
 
@@ -288,42 +308,71 @@ footer {
     background-color: var(--card-bg);
     text-align: center;
     
+
     p {
         margin-top: 10px;
     }
 }
 
-@media screen and (max-width: 600px){
-        header {
-        padding: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-        align-items: center;
-    
-        
-        h1{
+@media screen and (max-width: 600px) {
+    header {
+        padding: 5px;
+        height: 80px;
+       
+
+        h1 {
             font-size: 20px;
-            
+            margin-left: 18px;
         }
 
-        #tempo {
-            padding: 5px;
-            font-size: 18px;
+
+        .botao-menu {
+            display: block;
         }
-    } 
+    }
+
+    .nav {
+        position: absolute;
+        background-color: var(--card-bg);
+        gap: 1px;
+        align-items: center;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 50px;
+        max-height: 0px;
+        margin-top: -10px;
+        
+
+    }
+
+    .nav.ativo {
+        max-height: 200px;
+    }
 
     .nav a {
-        margin: 5px;
-        font-size: 16px;
+        font-size: 17px;  
+    }
+
+    .card {
+        max-width: 400px;
+    }
+
+    .sobre-mim {
+        margin-top: 200px;
     }
 
     .sobre {
         grid-template-columns: 1fr;
-        
+
     }
+
     .img-sobre {
         height: 300px;
-       
+
     }
 
     .grade-projetos {
@@ -332,8 +381,7 @@ footer {
         justify-content: center;
         align-items: center;
 
-
     }
-  
-    
+
+
 }

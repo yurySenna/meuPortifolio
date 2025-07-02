@@ -12,6 +12,7 @@
 
 <body>
     <header>
+        <button class="botao-menu">☰</button>
         <h1>Senna</h1>
         <nav class="nav">
             <a href="#inicio" class="menu-link" id="Inicio">Inicio</a>
@@ -19,8 +20,9 @@
             <a href="#cursos" class="menu-link">Cursos</a>
             <a href="#sobre" class="menu-link">Sobre</a>
             <a href="#contato" class="menu-link">Contato</a>
-            <button id="tempo" onclick="mudarTema()">🌙</button>
         </nav>
+        <button id="tempo" onclick="mudarTema()">🌙</button>
+       
 
     </header>
     <section class="sobre-mim" id="inicio">
@@ -187,7 +189,8 @@
                     <span class="tag-habilidades efeito-cursor">JavaScript</span>
                     <span class="tag-habilidades efeito-cursor">React</span>
                     <span class="tag-habilidades efeito-cursor">Node</span>
-                    <span class="tag-habilidades efeito-cursor">UX/UI</span>
+                    <span class="tag-habilidades efeito-cursor">Python</span>
+                  
                 </div>
 
             </div>
@@ -198,7 +201,7 @@
         <h2 id="contato" class="titulo-secao">Contato</h2>
 
         <div class="botoes-contato">
-            <a href="https://wa.link/4baiep" class="botao-contato whats efeito-cursor ">
+            <a href="https://wa.link/r5gau0" class="botao-contato whats efeito-cursor " target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
                     <path fill="#25D366"
                         d="M4.9 40.5l2.7-9.9C5.5 27 4 23.7 4 20 4 10.1 12.1 2 22 2s18 8.1 18 18-8.1 18-18 18c-3.5 0-6.9-1-9.8-2.9L4.9 40.5z" />
@@ -209,7 +212,7 @@
                 <span>Whatsapp</span>
             </a>
 
-            <a href="mailto:yurysenasilva@gmail.com" class="botao-contato email efeito-cursor">
+            <a href="mailto:yurysenasilva@gmail.com" class="botao-contato email efeito-cursor" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
                     <path fill="#D44638" d="M4 8h40v32H4z" />
                     <path fill="#FFF" d="M4 8l20 16 20-16z" />
@@ -218,7 +221,7 @@
                 <span>E-mail</span>
             </a>
 
-            <a href="https://www.linkedin.com/in/yury-senna-6b55b0276/" class="botao-contato linkedin efeito-cursor">
+            <a href="https://www.linkedin.com/in/yury-senna-6b55b0276/" class="botao-contato linkedin efeito-cursor" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="#0077B5"
                         d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.53c-1.14 0-2.06-.92-2.06-2.06s.92-2.06 2.06-2.06c1.13 0 2.06.92 2.06 2.06s-.92 2.06-2.06 2.06zm15.11 12.92h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.94v5.68H9.33V9h3.42v1.56h.05c.48-.9 1.64-1.86 3.37-1.86 3.6 0 4.27 2.37 4.27 5.45v6.3z" />
@@ -226,7 +229,7 @@
 
                 <span>Linkedin</span>
             </a>
-            <a href="https://github.com/yurySenna" class="botao-contato git efeito-cursor">
+            <a href="https://github.com/yurySenna" class="botao-contato git efeito-cursor" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                     <path fill="#181717"
                         d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.21.66-.47v-1.68c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.86v2.77c0 .27.17.58.67.48A10.002 10.002 0 0 0 22 12c0-5.52-4.48-10-10-10z" />
@@ -241,7 +244,6 @@
     <footer>
         <div id="tempo-agora"
      class="fixed bottom-4 right-4 bg-white/80 backdrop-blur-md text-gray-800 text-sm rounded-xl shadow-md px-4 py-2 z-50">
-  Carregando clima e horário...
 </div>
         <p>© 2025 Senna Dev - Todos os direitos reservados.</p>
     </footer>
