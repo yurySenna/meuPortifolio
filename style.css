@@ -54,7 +54,7 @@ header {
     font-size: 20px;
     color: var(--text-color);
     font-weight: bolder;
-    
+
 
 
 }
@@ -307,7 +307,7 @@ footer {
     padding: 20px;
     background-color: var(--card-bg);
     text-align: center;
-    
+
 
     p {
         margin-top: 10px;
@@ -318,7 +318,7 @@ footer {
     header {
         padding: 5px;
         height: 80px;
-       
+
 
         h1 {
             font-size: 20px;
@@ -345,8 +345,6 @@ footer {
         margin-bottom: 50px;
         max-height: 0px;
         margin-top: -10px;
-        
-
     }
 
     .nav.ativo {
@@ -354,7 +352,7 @@ footer {
     }
 
     .nav a {
-        font-size: 17px;  
+        font-size: 17px;
     }
 
     .card {
@@ -367,8 +365,19 @@ footer {
 
     .sobre {
         grid-template-columns: 1fr;
+        max-width: 500px;
+        padding: 10px;
 
     }
+
+    .conteudo-sobre h2 {
+        font-size: 20px;
+    }
+
+    .conteudo-sobre p {
+        font-size: 14px;
+    }
+
 
     .img-sobre {
         height: 300px;
@@ -382,6 +391,6 @@ footer {
         align-items: center;
 
     }
-
+    
 
 }
